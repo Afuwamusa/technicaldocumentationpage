@@ -19,18 +19,18 @@ header {
 #main-doc li {
     list-style: lower-roman;
 }
-#nav {
-    position: inherit;
-    min-width: 290px;
+#navbar {
+    position: fixed;
+    min-width: 100px;
     border-right: solid;
     height:100%;
     text-align: left;
-    /* top:0px; */
-    /* left:1px; */
-    /* background-color: beige; */
-    /* margin-left: 0px; */
-    display: block;
-}
+    top:0px; 
+    left:1px;
+    background-color: beige;
+    margin-left: 0px; 
+    /* display: block; */
+   }
 
 #navbar a{
 
@@ -54,7 +54,6 @@ header {
     padding: 15x;
     max-width: 300px;
     height: 600px;
-    border: 1px solid black;
     margin-top: 5px;
 }
 #navbar li {
@@ -62,7 +61,6 @@ header {
    
     padding:15px;
      padding-left: 2px; 
-    
     list-style: none;
     position: left;
     left: 50px;
@@ -81,12 +79,12 @@ header {
 }
 section article{
     font-size: 0.98em;
-    margin: 15px;
+    /* margin: 3px; */
     color: black;
 
 }
 section li{
-    margin: 15px 0px 0px 20px;
+    margin: 15px 0px 0px 0px;
 }
 code{
     display: block;
@@ -98,11 +96,11 @@ code{
     line-height: 2;
     color: grey;
 }
-@media only screen and (max-width: 815px) {
+@media only screen and (max-width: 400px) {
     /* For mobile phones: */
 #navbar ul{ 
     border:1px solid;
-    height:207px; 
+    height:150px; 
    }
     #navbar{ 
       background-color:burlywood;
@@ -110,23 +108,28 @@ code{
       top:0;
      padding:0;
      margin: 0;
-     width:10%;
-     max-height:275px;
+     width:2%;
+     max-width: 75px;
      border:none;
      z-index:1;
      border-bottom:2px solid;
-} 
+     
+}  
  #main-doc{
-      position: relative;
+      position: absolute;
       margin-left:0px;
-      margin-top:270px; 
-/*}
-#main-doc section { */
-/*     padding-top: 240px; */
-/* } */
+      margin-top:70px; 
+}
+#main-doc section { 
+     padding-top: 20px; 
+ }
+  
+ 
+} 
 
-/* @media only screen and(max-width: 400px)
+ @media only screen and(max-width: 200px){
 
-#main-doc { */
-      /* margin-left:-10px; */
-/* } */
+#main-doc {
+       margin-left:-10px; 
+ }
+} 
