@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="techdoc.css">
+        <nav id="navbar">
+
+            
+             <header><h1>HTML Tutorial</h1>
+            </header>
+            <ul  id="to1">
+            <a class="nav-link" href="#Introduction" rel="internal"><li>Introduction</li></a>
+            <a class="nav-link" href="#HTML_Elements" rel="internal"><li>HTML Elements</li></a>
+            <a class="nav-link" href="#HTML_Headings"rel="internal"><li>HTML Headings</li></a>
+            <a class="nav-link" href="#The_HTML_Style_Attribute"rel="internal"><li>The HTML Style Attribute</li></a>
+            <a class="nav-link" href="#HTML_colors"rel="internal"><li>HTML colors</li></a>
+            <a class="nav-link" href="#HTML_Links"rel="internal"><li>HTML Links</li></a>
+            <a class="nav-link" href="#Conclussion"rel="internal"><li>Conclussion</li></a>
+
+         </ul>   
+        </nav>
+        </head>
+    <body>
+            
+        <main id="main-doc">
+            
+            <section class="main_section" id="Introduction">
+            <header><h1>Introduction</h1></header>
+            <article>
+            <h1>What is HTML?</h1>
+            <p>GHTML is the standard markup language for creating Web pages.</p><br><br>
+                   
+                  <li>HTML stands for Hyper Text Markup Language</li>
+                  <li>HTML describes the structure of Web pages using markup</li>
+                  <li>HTML elements are the building blocks of HTML pages</li>
+                  <li>HTML elements are represented by tags</li>
+                  <li>HTML tags label pieces of content such as "heading", "paragraph", "table", and so on</li>
+                  <li>Browsers do not display the HTML tags, but use them to render the content of the page</li>
+             </article>     
+            </section>
+            
+            <section class="main_section" id="HTML_Elements">
+                <header><h1>HTML Elements</h1></header>
+                <article>
+            <p>An HTML element usually consists of a start tag and end tag, with the content inserted in between:</p>
+            <p>The HTML element is everything from the start tag to the end tag:</p>
+             <p>The <body> element defines the document body.It has a start tag <body> and an end tag </body>.
+                The element content is two other HTML elements (h1 and p)</p>   
+                </article>   
+            </section>
+            <section class="main_section" id="HTML_Headings">
+                <article>
+                <header>
+            <h3>HTML Headings</h3>
+            </header>
+            <p>Headings are defined with the h1 to h6 tags.h1 defines the most important heading. h6 defines the least important heading.</p>
+             <p>Headings are important because, search engines use the headings to index the structure and content of your web pages.
+                Users skim your pages by its headings. It is important to use headings to show the document structure.
+               h1 headings should be used for main headings, followed by h2 headings, then the less important h3, and so on.</p>   
+             <li>The HTML head element has nothing to do with HTML headings.</li>
+             <li>The head element is a container for metadata. HTML metadata is data about the HTML document. Metadata is not displayed.</li>
+            <li>The head element is placed between the html tag and the body tag</li>
+            <code>
+                <xmp>   
+            <!DOCTYPE html>
+            <html>
+            
+            <head>
+              <title>My First HTML</title>
+              <meta charset="UTF-8">
+            </head>
+            
+            <body>
+                </xmp>
+            </code>
+            </article>
+            </section>
+            <section class="main_section" id="The_HTML_Style_Attribute">
+                <header>
+            <h3>The HTML Style Attribute</h3>
+            </header>
+            <article>
+            <p>Setting the style of an HTML element, can be done with the style attribute.The HTML style attribute has the following syntax:</p>
+                 <code><xmp><tagname style="property:value;"></tagname></xmp></code>
+            <li>The background-color property defines the background color for an HTML element.</li>
+            <li>The color property defines the text color for an HTML element.</li>
+            <li>The font-family property defines the font to be used for an HTML element.</li>
+            <li>The text-align property defines the horizontal text alignment for an HTML element.</li>
+        </article>
+        </section>
+            <section class="main_section" id="HTML colors">
+                <article>
+                <header>
+            <h1> HTML colors</h1>
+            <h2>RGB Value</h2>
+                </header>
+            <p>In HTML, a color can be specified by using a color name, an RGB value, or a HEX value.</p>
+
+            <p>In HTML, a color can also be specified as an RGB value, using this formula: rgb(red, green, blue)<br>
+                Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255.<br>
+                For example, rgb(255,0,0) is displayed as red, because red is set to its highest value (255) and the others are set to 0.</p>
+
+               <li>To display the color black, all color parameters must be set to 0, like this: rgb(0,0,0).</li>
+               <li>To display the color white, all color parameters must be set to 255, like this: rgb(255,255,255).</li>
+            <p>In HTML, a color can also be specified using a hexadecimal value(HEX value) in the form:<br>
+                #RRGGBB, where RR (red),GG (green) and BB (blue) are hexadecimal values between 00 and<br>
+                 FF (same as decimal 0-255). For example, #FF0000 is displayed as red,<br>
+               because red is set to its highest value (FF) and the others are set to the lowest value (00)</p>
+               </article> 
+            </section>
+            <section class="main_section" id="HTML Links">
+                <article>
+                <header>
+            <h2>HTML Links</h2>
+            <h2>HTML Links - Hyperlinks</h2>
+            </header>
+            <p>Links are found in nearly all web pages. Links allow users to click their way from page to page.</p>
+
+            <p>HTML links are hyperlinks.You can click on a link and jump to another document.<br> 
+                And When you move the mouse over a link, the mouse arrow will turn into a little hand</p><br>
+            <p>In HTML, links are defined with the <a> tag. forexample;<br> 
+                <code><xmp><a href="http://www.w3schools.com/html/">Visit our HTML tutorial</a></xmp></code></p>
+                <li>The href attribute specifies the destination address (http://www.w3schools.com/html/) of the link.</li>
+                <li>The link text is the visible part (Visit our HTML tutorial).</li>
+                <li>Clicking on the link text will send you to the specified address</li>
+                <header>
+            <h3> Links - Create a Bookmark</h3>
+            </header>
+            <p>HTML bookmarks are used to allow readers to jump to specific parts of a Web page.<br>
+                Bookmarks can be useful if your webpage is very long.To make a bookmark,<br>
+                you must first create the bookmark, and then add a link to it.<br>
+                When the link is clicked, the page will scroll to the location with the bookmark</p>
+                </article>            
+                </section>
+            <section class="main_section" id="Conclussion">
+                <article>
+            <header><h2>Conclussion</h2></header>
+            <article>
+            <p>HTML has so many tag elements, forexample; <a>(stands for hyperlinks),<br>
+               there is a style element,head element,list(li) and so many other tag elements<br>
+                and each of them react differeniy</p><br>
+                </article>
+            </section> 
+
+
+
+
+            
+        </main>
+        
+
+    </body>
+</html>
