@@ -1,6 +1,6 @@
 
 html body {
-    background-color: aquamarine;
+    background-color: rgb(127, 255, 212);
     line-height: 1.5;
     font-family: 'Open Sans',Arial,sans-serif;
     padding-right: 70px;
@@ -29,7 +29,8 @@ header {
     left:1px;
     background-color: beige;
     margin-left: 0px; 
-    /* display: block; */
+    width: max-content;
+
    }
 
 #navbar a{
@@ -76,6 +77,7 @@ header {
     margin-left: 310px;
     padding: 20px;
     margin-bottom:140px;
+    padding-left: 20px; 
 }
 section article{
     font-size: 0.98em;
@@ -95,24 +97,27 @@ code{
     word-wrap: normal;
     line-height: 2;
     color: grey;
+    background-color: rgb(112, 230, 190);
+    margin-top: 10px; 
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 420px) {
     /* For mobile phones: */
 #navbar ul{ 
-    border:1px solid;
-    height:150px; 
+    height:150px;
+    padding-left: 10px; 
    }
-    #navbar{ 
-      background-color:burlywood;
-      position:absolute;
-      top:0;
-     padding:0;
-     margin: 0;
-     width:2%;
-     max-width: 75px;
-     border:none;
-     z-index:1;
-     border-bottom:2px solid;
+#navbar{ 
+    background-color:pink;
+    position:absolute;
+    top:0;
+    padding:0;
+    margin: 0;
+    width:2%;
+    max-width: 75px;
+    border:none;
+    z-index:1;
+    border-bottom:2px solid;
+    width: min-content;
      
 }  
  #main-doc{
@@ -121,7 +126,8 @@ code{
       margin-top:70px; 
 }
 #main-doc section { 
-     padding-top: 20px; 
+     padding-top: 20px;
+     padding-left: 80px;
  }
   
  
